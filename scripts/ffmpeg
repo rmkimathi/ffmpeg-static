@@ -5,7 +5,7 @@ __DIR__=$(dirname "${__FILE__}")
 . $__DIR__/common.inc
 
 NAME=ffmpeg
-VERSION=4.2
+VERSION=4.2.1
 
 do_download()
 {
@@ -39,17 +39,17 @@ do_configure()
     --extra-libs="-lpthread -lm" \
     --bindir="$BIN_DIR" \
     --enable-gpl \
-    --enable-openssl \
     --enable-libass \
     --enable-libfdk-aac \
+    --disable-encoder=aac \
     --enable-libfreetype \
     --enable-libmp3lame \
     --enable-libopus \
-    --enable-libtheora \
     --enable-libvorbis \
     --enable-libvpx \
     --enable-libx264 \
     --enable-libx265 \
+    --enable-libdav1d \
     --enable-nonfree
   then
     error "Failed to configure $NAME"

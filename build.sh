@@ -7,10 +7,10 @@ PRJ_DIR=$__DIR__ && . $__DIR__/scripts/common.inc
 install_dependencies()
 {
   info "Install dependencies ..."
-  run apt-get update
-  run apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev \
-    libsdl1.2-dev libtheora-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev \
-    libxcb-xfixes0-dev pkg-config texinfo zlib1g-dev cmake mercurial libnuma-dev openssl libssl-dev
+  run sudo apt update
+  run sudo apt -y install autoconf automake build-essential libass-dev libfreetype6-dev \
+    libsdl2-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev \
+    libxcb-xfixes0-dev pkg-config texinfo wget zlib1g-dev cmake git mercurial libnuma-dev meson nasm yasm
   info "Install dependencies complete"
 }
 
@@ -35,7 +35,7 @@ all()
   install_dependencies
 
   # Build order matters
-  LIB_SCRIPTS="nasm libx264 libx265 libfdk-aac libmp3lame libopus libvpx ffmpeg"
+  LIB_SCRIPTS="libdav1d libx264 libx265 libfdk-aac libmp3lame libopus libvpx ffmpeg"
   for LIB_SCRIPT in $LIB_SCRIPTS; do
     duccic $LIB_SCRIPT
   done
@@ -50,7 +50,7 @@ usage()
   printf "OPTIONS :\n"
   printf "   all      download, compile and install all libraries\n"
   printf "   setup    install dependencies\n"
-  printf "   nasm     download, compile and install nasm\n"
+  printf "   dav1d    download, compile and install libdav1d\n"
   printf "   x264     download, compile and install libx264\n"
   printf "   x265     download, compile and install libx265\n"
   printf "   aac      download, compile and install libfdk-aac\n"
@@ -68,8 +68,8 @@ case "$1" in
   setup)
     install_dependencies
   ;;
-  nasm)
-    duccic nasm
+  dav1d)
+    duccic libdav1d
   ;;
   x264)
     duccic libx264

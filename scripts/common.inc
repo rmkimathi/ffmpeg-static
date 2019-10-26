@@ -1,7 +1,8 @@
 #
 # This file is included by all scripts
 #
-DEFAULT_BIN_SYMLINK_PATH=/usr/local/bin
+# DEFAULT_BIN_SYMLINK_PATH=/usr/local/bin
+DEFAULT_BIN_SYMLINK_PATH=$HOME/bin
 
 __DATE__=$(date +%Y%m%d)
 __LOG__=0
