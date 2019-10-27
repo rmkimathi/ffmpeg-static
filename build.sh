@@ -7,8 +7,8 @@ PRJ_DIR=$__DIR__ && . $__DIR__/scripts/common.inc
 install_dependencies()
 {
   info "Install dependencies ..."
-  run sudo apt update
-  run sudo apt -y install autoconf automake build-essential libass-dev libfreetype6-dev \
+  run sudo apt-get update
+  run sudo apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev \
     libsdl2-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev \
     libxcb-xfixes0-dev pkg-config texinfo wget zlib1g-dev cmake git mercurial libnuma-dev meson nasm yasm
   info "Install dependencies complete"
