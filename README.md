@@ -29,4 +29,8 @@ sudo make install
 
 ===== Documentation =====
 echo "MANPATH_MAP $HOME/bin $HOME/ffmpeg-static/build/current/share/man" >> ~/.manpath
+
+===== Script =====
+cd ~/ffmpeg-static
+./build.sh all
 ```
