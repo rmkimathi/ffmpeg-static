@@ -18,13 +18,15 @@ FFmpeg is compiled with the following libraries :
 
 ## Installation
 ```
+===== Symbolic links folder =====
 mkdir -p ~/bin
 
+===== nvenc =====
 git -C nv-codec-headers pull 2> /dev/null || git clone --depth 1 https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
-
 cd nv-codec-headers
-
 make
-
 sudo make install
+
+===== Documentation =====
+echo "MANPATH_MAP $HOME/bin $HOME/ffmpeg-static/build/current/share/man" >> ~/.manpath
 ```
