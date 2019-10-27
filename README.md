@@ -17,7 +17,7 @@ FFmpeg is compiled with the following libraries :
 * [libvpx](https://github.com/webmproject/libvpx/)
 
 ## Installation
-
+```
 mkdir -p ~/bin
 
 git -C nv-codec-headers pull 2> /dev/null || git clone --depth 1 https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
@@ -27,3 +27,4 @@ cd nv-codec-headers
 make
 
 sudo make install
+```
