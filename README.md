@@ -17,7 +17,9 @@ FFmpeg is compiled with the following libraries :
 * [libvpx](https://github.com/webmproject/libvpx/)
 
 ## Installation
+
 ```
+
 ===== Symbolic links folder =====
 mkdir -p ~/bin
 
@@ -33,4 +35,5 @@ echo "MANPATH_MAP $HOME/bin $HOME/ffmpeg-static/build/current/share/man" >> ~/.m
 ===== Script =====
 cd ~/ffmpeg-static
 ./build.sh all
+
 ```
