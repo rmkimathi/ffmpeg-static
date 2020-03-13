@@ -10,7 +10,7 @@ install_dependencies()
   run sudo apt-get update
   run sudo apt-get -y install autoconf automake build-essential libass-dev libfreetype6-dev \
     libsdl2-dev libtool libva-dev libvdpau-dev libvorbis-dev libxcb1-dev libxcb-shm0-dev \
-    libxcb-xfixes0-dev pkg-config texinfo wget zlib1g-dev cmake git mercurial libnuma-dev meson nasm yasm
+    libxcb-xfixes0-dev pkg-config texinfo wget zlib1g-dev cmake git mercurial libnuma-dev meson ninja-build nasm yasm
   info "Install dependencies complete"
 }
 
