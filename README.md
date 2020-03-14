@@ -8,7 +8,7 @@ Compilation is based on [FFmpeg wiki compilation guide](https://trac.ffmpeg.org/
 
 FFmpeg is compiled with the following libraries :
 
-* [nasm](https://www.nasm.us/pub/nasm/releasebuilds)
+* [nasm](https://www.nasm.us/pub/nasm/releasebuilds/?C=M;O=D)
 * [libsndio](http://www.sndio.org)
 * [libsdl2](https://www.libsdl.org/release)
 * [libdav1d](https://code.videolan.org/videolan/dav1d)
