@@ -10,7 +10,7 @@ FFmpeg is compiled with the following libraries :
 
 * [nasm](https://www.nasm.us/pub/nasm/releasebuilds/?C=M;O=D)
 * [libsndio](http://www.sndio.org)
-* [libsdl2](https://www.libsdl.org/release)
+* [libsdl2](https://www.libsdl.org/release/?C=M;O=D)
 * [libdav1d](https://code.videolan.org/videolan/dav1d)
 * [libx264](https://code.videolan.org/videolan/x264)
 * [libx265](https://bitbucket.org/multicoreware/x265/wiki/Home)
