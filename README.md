@@ -8,6 +8,9 @@ Compilation is based on [FFmpeg wiki compilation guide](https://trac.ffmpeg.org/
 
 FFmpeg is compiled with the following libraries :
 
+* [nasm](https://www.nasm.us/pub/nasm/releasebuilds)
+* [libsndio](http://www.sndio.org)
+* [libsdl2](https://www.libsdl.org/release)
 * [libdav1d](https://code.videolan.org/videolan/dav1d)
 * [libx264](https://code.videolan.org/videolan/x264)
 * [libx265](https://bitbucket.org/multicoreware/x265/wiki/Home)
@@ -33,7 +36,9 @@ sudo make install
 echo "MANPATH_MAP $HOME/bin $HOME/ffmpeg-static/build/current/share/man" >> ~/.manpath
 
 ===== Script =====
+export FFBUILD_VERSION=4.2.2 #ffmpeg version (optional maintain one build folder)
 cd ~/ffmpeg-static
+./build.sh -h
 ./build.sh all
 
 ```
