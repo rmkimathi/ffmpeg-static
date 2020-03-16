@@ -39,6 +39,7 @@ echo "MANPATH_MAP $HOME/bin $HOME/ffmpeg-static/build/current/share/man" >> ~/.m
 
 ===== Script =====
 export FFBUILD_VERSION=4.2.2 #ffmpeg version (optional maintain one build folder)
+git clone https://github.com/rmkimathi/ffmpeg-static.git
 cd ~/ffmpeg-static
 ./build.sh -h
 ./build.sh all
