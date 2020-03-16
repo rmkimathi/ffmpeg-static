@@ -6,8 +6,8 @@ Target OS is Ubuntu.
 
 Compilation is based on [FFmpeg wiki compilation guide](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu).
 
-nasm version ≥ 2.14
-yasm version ≥ 1.2.0
+nasm version ≥ 2.14  
+yasm version ≥ 1.2.0  
 meson version ≥ 0.47
 
 FFmpeg is compiled with the following libraries :
