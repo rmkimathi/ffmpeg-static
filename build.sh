@@ -35,7 +35,7 @@ all()
   install_dependencies
 
   # Build order matters
-  LIB_SCRIPTS="nasm libsndio libsdl2 libdav1d libx264 libx265 libfdk-aac libmp3lame libopus libvpx ffmpeg"
+  LIB_SCRIPTS="nasm libdav1d libx264 libx265 libfdk-aac libmp3lame libopus libvpx ffmpeg"
   for LIB_SCRIPT in $LIB_SCRIPTS; do
     duccic $LIB_SCRIPT
   done
@@ -51,8 +51,6 @@ usage()
   printf "   all      download, compile and install all libraries\n"
   printf "   setup    install dependencies\n"
   printf "   nasm     download, compile and install nasm\n"
-  printf "   sndio    download, compile and install libsndio\n"
-  printf "   sdl2     download, compile and install libsdl2\n"
   printf "   dav1d    download, compile and install libdav1d\n"
   printf "   x264     download, compile and install libx264\n"
   printf "   x265     download, compile and install libx265\n"
@@ -73,12 +71,6 @@ case "$1" in
   ;;
   nasm)
     duccic nasm
-  ;;
-  sndio)
-    duccic libsndio
-  ;;
-  sdl2)
-    duccic libsdl2
   ;;
   dav1d)
     duccic libdav1d
