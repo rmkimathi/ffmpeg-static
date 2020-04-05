@@ -1,6 +1,6 @@
 # ffmpeg-static
 
-Bash script collection to compile statically [FFmpeg](https://ffmpeg.org/) and install it using symbolic links.
+Bash script collection to compile statically [FFmpeg](https://ffmpeg.org/download.html) and install it using symbolic links.
 
 Target OS is Ubuntu.
 
@@ -13,13 +13,13 @@ meson version ≥ 0.47
 FFmpeg is compiled with the following libraries :
 
 * [nasm](https://www.nasm.us/pub/nasm/releasebuilds/?C=M;O=D)
-* [libdav1d](https://code.videolan.org/videolan/dav1d)
+* [libdav1d](https://code.videolan.org/videolan/dav1d/-/releases)
 * [libx264](https://code.videolan.org/videolan/x264)
-* [libx265](https://bitbucket.org/multicoreware/x265/wiki/Home)
-* [libfdk-aac](https://github.com/mstorsjo/fdk-aac)
+* [libx265](https://bitbucket.org/multicoreware/x265/downloads/)
+* [libfdk-aac](https://github.com/mstorsjo/fdk-aac/releases)
 * [libmp3lame](http://lame.sourceforge.net)
 * [libopus](http://www.opus-codec.org/downloads/)
-* [libvpx](https://github.com/webmproject/libvpx/)
+* [libvpx](https://github.com/webmproject/libvpx/releases)
 
 ## Installation
 
