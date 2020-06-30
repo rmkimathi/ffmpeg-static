@@ -1,6 +1,6 @@
 # ffmpeg-static
 
-Bash script collection to compile statically [FFmpeg](https://ffmpeg.org/download.html) and install it using symbolic links.
+Bash script collection to compile statically [FFmpeg](http://ffmpeg.org/releases/?C=M;O=D) and install it using symbolic links.
 
 Target OS is Ubuntu.
 
