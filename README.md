@@ -15,10 +15,10 @@ FFmpeg is compiled with the following libraries :
 * [nasm](https://www.nasm.us/pub/nasm/releasebuilds/?C=M;O=D)
 * [libdav1d](https://code.videolan.org/videolan/dav1d/-/releases)
 * [libx264](https://code.videolan.org/videolan/x264)
-* [libx265](https://bitbucket.org/multicoreware/x265_git/downloads/)
+* [libx265](https://github.com/videolan/x265/releases)
 * [libfdk-aac](https://github.com/mstorsjo/fdk-aac/releases)
 * [libmp3lame](http://lame.sourceforge.net)
-* [libopus](http://www.opus-codec.org/downloads/)
+* [libopus](http://www.opus-codec.org/downloads)
 * [libvpx](https://github.com/webmproject/libvpx/releases)
 
 ## Installation
