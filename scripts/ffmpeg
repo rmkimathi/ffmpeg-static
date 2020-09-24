@@ -5,7 +5,7 @@ __DIR__=$(dirname "${__FILE__}")
 . $__DIR__/common.inc
 
 NAME=ffmpeg
-VERSION=4.3.1
+VERSION=snapshot
 
 do_download()
 {
@@ -21,7 +21,7 @@ do_unpack()
 {
   info "Unpack $NAME [ ${C_RUN}${VERSION}${C_INFO} ] ..."
   cd_src
-  if ! tar xjvf ffmpeg-${VERSION}.tar.bz2; then
+  if ! tar xjvf ffmpeg-${VERSION}.tar.bz2 --one-top-level --strip-components=1; then
     error "Failed to unpack $NAME"
   fi
   info "Unpack complete"
