@@ -26,7 +26,7 @@ FFmpeg is compiled with the following libraries :
 ```
 
 ===== Symbolic links folder =====
-mkdir -p ~/bin
+mkdir -p ~/.local/bin
 
 ===== nvenc =====
 git -C nv-codec-headers pull 2> /dev/null || git clone https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
@@ -35,6 +35,8 @@ make
 sudo make install
 
 ===== Documentation =====
+Drop man folder in ~/.local/share
+or
 echo "MANPATH_MAP $HOME/bin $HOME/ffmpeg-static/build/current/share/man" >> ~/.manpath
 
 ===== Script =====
