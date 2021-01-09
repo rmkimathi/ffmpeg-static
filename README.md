@@ -37,10 +37,10 @@ sudo make install
 ===== Documentation =====
 Drop man folder in ~/.local/share
 or
-echo "MANPATH_MAP $HOME/bin $HOME/ffmpeg-static/build/current/share/man" >> ~/.manpath
+echo "MANPATH_MAP $HOME/.local/bin $HOME/ffmpeg-static/build/current/share/man" >> ~/.manpath
 
 ===== Script =====
-export FFBUILD_VERSION=4.3.1 #ffmpeg version (optional maintain version build folder. /etc/environment)
+export FFBUILD_VERSION=snapshot #ffmpeg version (optional maintain version build folder. /etc/environment)
 git clone https://github.com/rmkimathi/ffmpeg-static.git
 cd ~/ffmpeg-static
 ./build.sh -h
