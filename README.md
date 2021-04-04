@@ -40,9 +40,10 @@ or
 echo "MANPATH_MAP $HOME/.local/bin $HOME/ffmpeg-static/build/current/share/man" >> ~/.manpath
 
 ===== Script =====
-export FFBUILD_VERSION=snapshot #ffmpeg version
+# ffmpeg version
+export FFBUILD_VERSION=snapshot
 
-(optional maintain version build folder. /etc/environment)
+# optional maintain version build folder. /etc/environment
 sudo su
 echo "FFBUILD_VERSION=snapshot" >> /etc/environment
 
